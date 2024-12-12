@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <!--HEAD-->
+    <head>
+        <title>Ten | Portfolio</title>
+        <link rel="stylesheet" href="ten-portf-styles/port-home.css">
+        <link rel="stylesheet" href="ten-portf-styles/port-about-me.css">
+        <link rel="stylesheet" href="ten-portf-styles/port-projects.css">
+        <link rel="stylesheet" href="ten-portf-styles/port-edits.css">
+    </head>
+
+    <!--BODY?-->
+    <body>
+
+        <div class="nav-container">
+            <nav class="header-nav">
+               <a class="nav-a" href="#" onclick="home();">HOME</a>
+               <a class="nav-a" href="#" onclick="aboutMe();">ABOUT ME</a>
+               <a class="nav-a" href="#" onclick="projects();">PROJECTS</a>
+               <span></span>
+            </nav>
+        </div>
+
+        <home id="main-content">
+
+            <div class="welcome-container">
+                <img src="home-pics/welcome.png">
+            </div>
+
+            <div class="home-container">
+                <div class="home-bg-container">
+                    <img src="home-pics/home-background.png" alt="background image">
+                </div>
+            </div>
+
+        </home> 
+
+        <about-me id="about-me-section">
+
+            <div class="master-master-container">
+                <div class="master-container">
+                    <div class="container1">
+                        <div class="box1">
+                            <img src="about-me-pics/pic1.png">
+                        </div>
+                        <div class="box5">
+                            <img src="about-me-pics/pic5.png">
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="box2">
+                            <img src="about-me-pics/pic2.png">
+                        </div>
+                        <div class="box3-and-4">
+                            <div class="box3">
+                                <img src="about-me-pics/pic3.png">
+                            </div>
+                            <div class="box4">
+                                <img src="about-me-pics/pic4.png">
+                            </div>
+                        </div>
+                        <div class="box6">
+                            <img src="about-me-pics/pic6.png">
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="box7">
+                            <img src="about-me-pics/pic7.png">
+                        </div>
+                        <div class="box8">
+                            <img src="about-me-pics/pic8.png">
+                        </div>
+                        <div class="box9">
+                            <img src="about-me-pics/pic9.png">
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="typewrite-container">
+                    <p class="hello-typewrite">Hello,</p>
+                    <p class="typewrite-text">I’m Ten, a graphic designer based in Marikina, Philippines.</p>
+                    <p class="typewrite-text">I do editing... I don't know what to say yet</p>
+                </aside>
+  
+            </div>
+
+            <div class="about-me-bg-container">
+                <img src="home-pics/layman-bg.png">
+            </div>
+
+        </about-me>
+
+        <projects id="projects-section">
+            <div class="projects-bg-container">
+                <img src="projects-pics/projects-bg-final.png">
+            </div>
+
+            <div class="photoshoots-btn-container">
+                <img src="projects-pics/photoshoots-btn.png">
+            </div>
+
+            <div class="edits-btn-container">
+                <img src="projects-pics/edits-btn.png" href="#" onclick="edits();">
+            </div>
+
+            <div id="edits-section" style="display: none;">
+    
+                <div class="edits-container">
+                    <div class="slider">
+                        <div class="list">
+                            <div class="item">
+                                <img src="projects-pics/proj1.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj2.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj5.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj6.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj7.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj8.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj9.png">
+                            </div>
+                            <div class="item">
+                                <img src="projects-pics/proj10.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+    
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </projects>
+
+        <script src="main.js"></script>
+        
+    </body>
+</html>

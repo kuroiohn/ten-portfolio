@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+:root{
+    --s: 150px;
+    --g: 10px;
+    --f: 1.5;
+}
+
+.image-grid-gallery {
+    display: grid !important;
+    gap: var(--g) !important;
+    width: calc(4*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+  
+.image-grid-gallery > .wp-block-image {
+    width: 0 !important;
+    height: 0 !important;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear !important;
+}
+  
+.image-grid-gallery .wp-block-image:hover{
+    width:  calc(var(--s)*var(--f)) !important;
+    height: calc(var(--s)*var(--f)) !important;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    width: 100%; /* Adjust as needed */
+    max-width: 1000px; /* Optional, to limit the overall width */
+    margin: 0 auto; /* Center the container */
+}
+
+.grid-item {
+    flex: 1 1 calc(33.333% - 10px); /* Three items per row, with gap */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below the image */
+    transition: transform 0.3s ease; /* Optional: smooth transition for hover effects */
+}
+
+/*
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+.card {
+    height: 300px;
+    background-color: rgb(48, 207, 232);
+    flex: 1 1 20px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card:hover {
+    flex: 3 1 20px;
+    background: rgb(12, 171, 195);
+}
+
+*/
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+.card {
+    background-color: rgb(48, 207, 232);
+    height: 300px;
+    border-radius: 33px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Makes the hovered card larger */
+    background: rgb(12, 171, 195); /* Change background color on hover */
+    flex: 3 1 20px;
+    /* flex-grow, flex-shrink, flex-basis */
+}
+
+/*
+.grid-container:hover .card {
+    transition: all 0.3s ease-in-out; 
+}
+*/
